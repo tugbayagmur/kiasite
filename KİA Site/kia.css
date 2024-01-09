@@ -1,0 +1,73 @@
+*{
+    padding:0 ;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"
+    ;
+    min-height: 100vh;
+    grid-template-rows: 80px 650px 250px;
+    background: url(images/d-kia-start-hero-ev9-double-1920x900.jpg) no-repeat center/cover;
+}
+header,main,footer{
+    display: flex;
+    flex-wrap: wrap;
+}
+header{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    grid-area: header;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+header:hover{
+    color: black;
+    background: white;
+}
+
+header > img{
+    width: 100px;
+}
+header
+main{
+    grid-area: main;
+}
+main > :nth-child(1){
+    margin-top: 400px;
+    margin-left: 880px;
+    font-size: 70px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+main > :nth-child(2){
+    margin-top: -50px;
+    margin-left: 780px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+main > a{
+    margin-top: -50px;
+    margin-left: 868px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    background-color: white;
+    height: 70px;
+    width: 140px;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+footer{
+    background:url(images/kia-cerato_u0gy.png) no-repeat center/cover;
+    grid-area: footer;
+    border: 5px white solid;
+}
